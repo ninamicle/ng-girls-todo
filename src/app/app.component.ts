@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { Todo } from './models/todo.model';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'ng-girls-todo';
+  title = 'My Todos';
 }

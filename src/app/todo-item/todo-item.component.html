@@ -1,0 +1,10 @@
+<div>
+  <input
+    type="checkbox"
+    class="todo-checkbox"
+    (click)="completeItem()"
+    [checked]="todo?.status"
+  />
+  <span [ngClass]="{ completed: todo?.status }">{{ todo?.title }}</span>
+  <button class="btn btn-red" (click)="removeItem()">remove</button>
+</div>

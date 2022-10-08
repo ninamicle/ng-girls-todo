@@ -1,1 +1,64 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+html,
+body {
+  height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: #f1f1f1;
+  font-size: 66%;
+  line-height: 1.5rem;
+  color: #404040;
+  font-family: "Lucida Grande", Verdana, sans-serif;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  background: lightseagreen;
+  color: #fff;
+  padding: 3px 10px;
+  margin: 0 0 0 3px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 24px;
+  cursor: pointer;
+  vertical-align: bottom;
+}
+
+.btn-red {
+  background-color: red;
+}
+
+.todo-input {
+  padding: 4px 10px 4px;
+  font-size: 16px;
+  font-family: "Lucida Grande", Verdana, sans-serif;
+  line-height: 20px;
+  border: solid 1px #dddddd;
+  border-radius: 5px;
+  flex-grow: 1;
+}
+.completed {
+  text-decoration: line-through;
+}
+
+:host(:not([hidden])) {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}

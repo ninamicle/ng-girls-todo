@@ -1,0 +1,13 @@
+<app-todo-add (save)="addTodo($event)"></app-todo-add>
+
+<ng-container *ngIf="todoList">
+  <div>
+    <ul *ngFor="let todo of todoList">
+      <app-todo-item
+        [todo]="todo"
+        (remove)="removeItem($event)"
+        (update)="completeItem($event.item, $event.changes)"
+      ></app-todo-item>
+    </ul>
+  </div>
+</ng-container>
